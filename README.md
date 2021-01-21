@@ -1,6 +1,35 @@
 # dev-laravel
 Laravel検証用
 
+### 検証テーブル
+```
+users
+    id - integer
+    name - string
+    email - string
+    email_verified_at - timestamp
+    password - string
+    remember_token - string
+    created_at - timestamp
+    updated_at - timestamp
+
+posts
+    id - integer
+    user_id - integer
+    title - string
+    body - text
+    deleted_at - timestamp
+    created_at - timestamp
+    updated_at - timestamp
+
+comments
+    id - integer
+    user_id - integer
+    post_id - integer
+    body - text
+    created_at - timestamp
+```
+
 以下初期README
 --------------------------------------------------
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
